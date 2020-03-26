@@ -69,8 +69,17 @@ resultado = Math.random();
 // jerarquia de operaciones 
 resultado = 1 + 2 * 2;
 
-
-
-
-
 console.log(resultado);
+
+let valor;
+
+valor = "Luis";
+valor = 0;
+valor = true;
+valor = null;
+valor = Symbol('simbolo');
+valor = [1,2,3];
+valor = {nombre: 'luis', apellido: 'garcia'};
+valor = new Date();
+
+console.log(typeof(valor));
