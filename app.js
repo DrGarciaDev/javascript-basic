@@ -13,6 +13,18 @@ mensaje = 'Escapando \'comillas\'';
 
 mensaje = "Escapando " + "mensaje";
 
-let aprendiendo = 'aprendiendo', tecnologia = 'tecnologia';
+let aprendiendo = 'aprendiendo java ', tecnologia = 'tecnologia';
 
 console.log(`${aprendiendo} ${tecnologia}`);
+console.log(`${aprendiendo.length}`);
+console.log(`${aprendiendo.concat(' tecno')}`);
+console.log(`${aprendiendo.toUpperCase()}`);
+console.log(`${aprendiendo.toLocaleLowerCase()}`);
+console.log(`${aprendiendo.indexOf('apren')}`);
+console.log(`${aprendiendo.substring(0, 2)}`);
+console.log(`${aprendiendo.slice(-2)}`);
+console.log(`${aprendiendo.slice(0,3)}`);
+console.log(`${aprendiendo.split(' ')}`);
+console.log(`${aprendiendo.replace('java', 'python')}`);
+console.log(`${aprendiendo.includes('java')}`);
+console.log(`${aprendiendo.repeat(2)}`);
