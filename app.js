@@ -28,3 +28,49 @@ console.log(`${aprendiendo.split(' ')}`);
 console.log(`${aprendiendo.replace('java', 'python')}`);
 console.log(`${aprendiendo.includes('java')}`);
 console.log(`${aprendiendo.repeat(2)}`);
+
+// Numeros 
+const   n1 = 30,
+        n2 = 20,
+        n3 = 20.20,
+        n4 = .1020,
+        n5 = -3;
+
+let resultado;
+
+// suma 
+resultado = n1 + n2;
+// resta 
+resultado = n1 - n2;
+// multiplicacion 
+resultado = n1 * n2;
+// division 
+resultado = n1 / n2;
+// modulo 
+resultado = n1 % n2;
+// pi 
+resultado = Math.PI;
+// redondeos
+resultado = Math.round(2.5);
+resultado = Math.ceil(2.5);
+resultado = Math.floor(2.5);
+// raiz cuadrada 
+resultado = Math.sqrt(144);
+// numero absoluto 
+resultado = Math.abs(-144);
+// potencia 
+resultado = Math.pow(8, 3);
+// minimo 
+resultado = Math.min(8, 3, 4);
+// maximo 
+resultado = Math.max(8, 3, 4);
+// random 
+resultado = Math.random();
+// jerarquia de operaciones 
+resultado = 1 + 2 * 2;
+
+
+
+
+
+console.log(resultado);
