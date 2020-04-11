@@ -112,9 +112,40 @@
 // console.log( parseFloat(num1) + num2);
 // console.log( parseFloat(num1).toFixed(1) + num2);
 
-// convertir numeros a strings 
-let cp = 90210;
+// // convertir numeros a strings 
+// let cp = 90210;
 
-cp = String(cp);
-cp = cp.toString();
-console.log( cp.length );
+// cp = String(cp);
+// cp = cp.toString();
+// console.log( cp.length );
+
+// arreglos 
+const numeros = [1,2,3,4,5];
+
+const meses = new Array ('enero', 'febrero', 'marzo');
+// maneras de agregar datos a un arreglo 
+meses[3] = 'abril';
+// añade al final 
+meses.push('mayo');
+// añade al principio
+meses.unshift('mes 0');
+// eliminar al final 
+meses.pop();
+// eliminar al principio
+meses.shift();
+// quitar o eliminar dentro de un rango
+// desde y cuantos quitar  
+meses.splice(2,1);
+// revertir 
+meses.reverse();
+
+let meses2 = ['diciembre'];
+
+// conctenar arreglos 
+console.log(meses.concat(meses2));
+
+// ordenar arreglos 
+meses.sort();
+// encontrar datos en un array 
+console.log(meses.indexOf('abril'));
+console.log(meses);
