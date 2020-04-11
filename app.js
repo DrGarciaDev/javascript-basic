@@ -70,7 +70,7 @@ resultado = Math.random();
 resultado = 1 + 2 * 2;
 
 console.log(resultado);
-
+// tipos de datos 
 let valor;
 
 valor = "Luis";
@@ -83,3 +83,21 @@ valor = {nombre: 'luis', apellido: 'garcia'};
 valor = new Date();
 
 console.log(typeof(valor));
+
+// operadores de comparacion 
+const num1 = 20;
+const num2 = 50;
+const num3 = '20';
+
+console.log( num1 > num2);
+console.log( num1 < num2);
+
+// comparador igual 
+console.log( num1 == num2);
+// compara hasta el tipo de dato 
+console.log( num1 === num2);
+
+// diferentes 
+console.log( num1 != num2);
+console.log( num1 !== num2);
+
