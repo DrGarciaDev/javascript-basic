@@ -119,33 +119,68 @@
 // cp = cp.toString();
 // console.log( cp.length );
 
-// arreglos 
-const numeros = [1,2,3,4,5];
+// // arreglos 
+// const numeros = [1,2,3,4,5];
 
-const meses = new Array ('enero', 'febrero', 'marzo');
-// maneras de agregar datos a un arreglo 
-meses[3] = 'abril';
-// añade al final 
-meses.push('mayo');
-// añade al principio
-meses.unshift('mes 0');
-// eliminar al final 
-meses.pop();
-// eliminar al principio
-meses.shift();
-// quitar o eliminar dentro de un rango
-// desde y cuantos quitar  
-meses.splice(2,1);
-// revertir 
-meses.reverse();
+// const meses = new Array ('enero', 'febrero', 'marzo');
+// // maneras de agregar datos a un arreglo 
+// meses[3] = 'abril';
+// // añade al final 
+// meses.push('mayo');
+// // añade al principio
+// meses.unshift('mes 0');
+// // eliminar al final 
+// meses.pop();
+// // eliminar al principio
+// meses.shift();
+// // quitar o eliminar dentro de un rango
+// // desde y cuantos quitar  
+// meses.splice(2,1);
+// // revertir 
+// meses.reverse();
 
-let meses2 = ['diciembre'];
+// let meses2 = ['diciembre'];
 
-// conctenar arreglos 
-console.log(meses.concat(meses2));
+// // conctenar arreglos 
+// console.log(meses.concat(meses2));
 
-// ordenar arreglos 
-meses.sort();
-// encontrar datos en un array 
-console.log(meses.indexOf('abril'));
-console.log(meses);
+// // ordenar arreglos 
+// meses.sort();
+// // encontrar datos en un array 
+// console.log(meses.indexOf('abril'));
+// console.log(meses);
+
+// OBJETOS 
+
+const persona = {
+    nombre: 'luis',
+    apellidos: 'garcia',
+    edad: 37,
+    musica: ['rock', 'balada'],
+    hogar: {
+        ciudad: 'guadalajara',
+        pais: 'mexico'
+    },
+    nacimiento: function(){
+        return new Date().getFullYear() - this.edad;
+    }
+}
+
+console.log(persona.musica);
+console.log(persona.musica[0]);
+
+console.log(persona.hogar);
+
+console.log(persona['hogar']['ciudad']);
+console.log(persona.hogar.ciudad);
+
+console.log(persona.nacimiento());
+
+const autos = [
+    {modelo: 'mustang', motor:2.1},
+    {modelo: 'corvete', motor:2.2}
+]
+
+for (let i = 0; i < autos.length; i++) {
+    console.log(autos[i].modelo);
+}
