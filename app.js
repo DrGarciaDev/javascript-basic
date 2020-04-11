@@ -101,13 +101,20 @@
 // console.log( num1 != num2);
 // console.log( num1 !== num2);
 
-// convertir strings a numeros 
+// // convertir strings a numeros 
 
-const num1 = '50';
-const num2 = 10;
-const num3 = 'tres';
+// const num1 = '50';
+// const num2 = 10;
+// const num3 = 'tres';
 
-console.log( Number(num1) + num2);
-console.log( parseInt(num1) + num2);
-console.log( parseFloat(num1) + num2);
-console.log( parseFloat(num1).toFixed(1) + num2);
+// console.log( Number(num1) + num2);
+// console.log( parseInt(num1) + num2);
+// console.log( parseFloat(num1) + num2);
+// console.log( parseFloat(num1).toFixed(1) + num2);
+
+// convertir numeros a strings 
+let cp = 90210;
+
+cp = String(cp);
+cp = cp.toString();
+console.log( cp.length );
