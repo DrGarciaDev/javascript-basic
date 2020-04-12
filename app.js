@@ -150,37 +150,53 @@
 // console.log(meses.indexOf('abril'));
 // console.log(meses);
 
-// OBJETOS 
+// // OBJETOS 
 
-const persona = {
-    nombre: 'luis',
-    apellidos: 'garcia',
-    edad: 37,
-    musica: ['rock', 'balada'],
-    hogar: {
-        ciudad: 'guadalajara',
-        pais: 'mexico'
-    },
-    nacimiento: function(){
-        return new Date().getFullYear() - this.edad;
+// const persona = {
+//     nombre: 'luis',
+//     apellidos: 'garcia',
+//     edad: 37,
+//     musica: ['rock', 'balada'],
+//     hogar: {
+//         ciudad: 'guadalajara',
+//         pais: 'mexico'
+//     },
+//     nacimiento: function(){
+//         return new Date().getFullYear() - this.edad;
+//     }
+// }
+
+// console.log(persona.musica);
+// console.log(persona.musica[0]);
+
+// console.log(persona.hogar);
+
+// console.log(persona['hogar']['ciudad']);
+// console.log(persona.hogar.ciudad);
+
+// console.log(persona.nacimiento());
+
+// const autos = [
+//     {modelo: 'mustang', motor:2.1},
+//     {modelo: 'corvete', motor:2.2}
+// ]
+
+// for (let i = 0; i < autos.length; i++) {
+//     console.log(autos[i].modelo);
+// }
+
+// Funciones 
+
+// IIFE 
+(function(tecnologia) {
+    console.log(tecnologia);
+})('javascript');
+
+// metodos de propiedad 
+const musica = {
+    reproducir: function () {
+        console.log('reproduciendo música')
     }
 }
 
-console.log(persona.musica);
-console.log(persona.musica[0]);
-
-console.log(persona.hogar);
-
-console.log(persona['hogar']['ciudad']);
-console.log(persona.hogar.ciudad);
-
-console.log(persona.nacimiento());
-
-const autos = [
-    {modelo: 'mustang', motor:2.1},
-    {modelo: 'corvete', motor:2.2}
-]
-
-for (let i = 0; i < autos.length; i++) {
-    console.log(autos[i].modelo);
-}
+musica.reproducir();
