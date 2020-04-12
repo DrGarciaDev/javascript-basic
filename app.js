@@ -187,16 +187,26 @@
 
 // Funciones 
 
-// IIFE 
-(function(tecnologia) {
-    console.log(tecnologia);
-})('javascript');
+// // IIFE 
+// (function(tecnologia) {
+//     console.log(tecnologia);
+// })('javascript');
 
-// metodos de propiedad 
-const musica = {
-    reproducir: function () {
-        console.log('reproduciendo música')
-    }
+// // metodos de propiedad 
+// const musica = {
+//     reproducir: function () {
+//         console.log('reproduciendo música')
+//     }
+// }
+
+// musica.reproducir();
+
+// try catch 
+// funcion inexistente 
+try {
+    algo();
+} catch (error) {
+    console.log(error);
+} finally {
+    console.log('siempre se ejecuta aunque no haya error ');
 }
-
-musica.reproducir();
