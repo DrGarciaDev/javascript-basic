@@ -201,12 +201,50 @@
 
 // musica.reproducir();
 
-// try catch 
-// funcion inexistente 
-try {
-    algo();
-} catch (error) {
-    console.log(error);
-} finally {
-    console.log('siempre se ejecuta aunque no haya error ');
+// // try catch 
+// // funcion inexistente 
+// try {
+//     algo();
+// } catch (error) {
+//     console.log(error);
+// } finally {
+//     console.log('siempre se ejecuta aunque no haya error ');
+// }
+
+// ForEach 
+
+const pendientes = ['tarea', 'comer', 'proyecto'];
+
+// foreach 
+pendientes.forEach(function(pendiente, index) {
+    console.log(`Indice: ${index} valor: ${pendiente}`);
+});
+
+console.log(pendientes);
+
+// map 
+const carrito = [
+    {id: 1, nombre: 'libro1'},
+    {id: 2, nombre: 'libro2'},
+    {id: 3, nombre: 'libro3'},
+];
+
+const nombreProducto = carrito.map(function(carrito){
+    return carrito.nombre;
+});
+
+console.log(nombreProducto);
+
+// for 
+const automovil = {
+    modelo: 'camaro',
+    motor: 6.1,
+    anio: 1969,
+    marca: 'chevrolet'
+};
+
+for (const llave in automovil) {
+    console.log(`${llave} : ${automovil[llave]}`);
 }
+
+console.log(automovil);
