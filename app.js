@@ -211,40 +211,111 @@
 //     console.log('siempre se ejecuta aunque no haya error ');
 // }
 
-// ForEach 
+// // ForEach 
 
-const pendientes = ['tarea', 'comer', 'proyecto'];
+// const pendientes = ['tarea', 'comer', 'proyecto'];
 
-// foreach 
-pendientes.forEach(function(pendiente, index) {
-    console.log(`Indice: ${index} valor: ${pendiente}`);
-});
+// // foreach 
+// pendientes.forEach(function(pendiente, index) {
+//     console.log(`Indice: ${index} valor: ${pendiente}`);
+// });
 
-console.log(pendientes);
+// console.log(pendientes);
 
-// map 
-const carrito = [
-    {id: 1, nombre: 'libro1'},
-    {id: 2, nombre: 'libro2'},
-    {id: 3, nombre: 'libro3'},
-];
+// // map 
+// const carrito = [
+//     {id: 1, nombre: 'libro1'},
+//     {id: 2, nombre: 'libro2'},
+//     {id: 3, nombre: 'libro3'},
+// ];
 
-const nombreProducto = carrito.map(function(carrito){
-    return carrito.nombre;
-});
+// const nombreProducto = carrito.map(function(carrito){
+//     return carrito.nombre;
+// });
 
-console.log(nombreProducto);
+// console.log(nombreProducto);
 
-// for 
-const automovil = {
-    modelo: 'camaro',
-    motor: 6.1,
-    anio: 1969,
-    marca: 'chevrolet'
-};
+// // for 
+// const automovil = {
+//     modelo: 'camaro',
+//     motor: 6.1,
+//     anio: 1969,
+//     marca: 'chevrolet'
+// };
 
-for (const llave in automovil) {
-    console.log(`${llave} : ${automovil[llave]}`);
+// for (const llave in automovil) {
+//     console.log(`${llave} : ${automovil[llave]}`);
+// }
+
+// console.log(automovil);
+
+// video 40: iteradores ya incluidos
+
+const ciudades = ['londres', 'madrid'];
+const ordenes = new Set([123, 234]);
+const datos = new Map();
+datos.set('nombre', 'luis');
+datos.set('profesion', 'desarrollador');
+
+console.log(ciudades);
+console.log(ordenes);
+console.log(datos);
+
+// entries iterador 
+for (let entrada of ciudades.entries() ) {
+    console.log(entrada);
 }
 
-console.log(automovil);
+for (let entradas of ordenes.entries() ) {
+    console.log(entradas);
+}
+
+for (let entradas of datos.entries() ) {
+    console.log(entradas);
+}
+
+// values 
+for (let entrada of ciudades ) {
+    console.log(entrada);
+}
+
+for (let entradas of ordenes.values() ) {
+    console.log(entradas);
+}
+
+for (let entradas of datos.values() ) {
+    console.log(entradas);
+}
+
+// keys  
+for (let entrada of ciudades.keys() ) {
+    console.log(entrada);
+}
+
+for (let entradas of ordenes.keys() ) {
+    console.log(entradas);
+}
+
+for (let entradas of datos.keys() ) {
+    console.log(entradas);
+}
+
+// default 
+for (let entrada of ciudades ) {
+    console.log(entrada);
+}
+
+for (let entradas of ordenes ) {
+    console.log(entradas);
+}
+
+for (let entradas of datos ) {
+    console.log(entradas);
+}
+
+// iterador en node list 
+const enlaces = document.getElementsByTagName('a');
+
+for(let enlace of enlaces) {
+    console.log(enlace);
+}
